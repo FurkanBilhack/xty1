@@ -23,8 +23,9 @@ jobs:
     - name: Build executable
       run: pyinstaller --noconsole --onefile xty1.py
 
+    # Eğer upload-artifact sorun çıkarıyorsa bu kısmı geçici kaldırabilirsin.
     - name: Upload artifact
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v2
       with:
         name: xty1-exe
         path: dist/xty1.exe
