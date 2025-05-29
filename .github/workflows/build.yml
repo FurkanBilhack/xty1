@@ -24,7 +24,7 @@ jobs:
       run: pyinstaller --noconsole --onefile xty1.py
 
     - name: Upload artifact
-      uses: actions/upload-artifact@v3.1.2
+      uses: actions/upload-artifact@v3
       with:
         name: xty1-exe
         path: dist/xty1.exe
